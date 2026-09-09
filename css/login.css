@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: #141414;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../assets/img/netflix-capa2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+
+}
+
+.logo img {
+    height: 120px;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login-container h1 {
+    text-align: left;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+}
+
+.input-group input {
+    background-color: #333;
+    color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #080808;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+.input-group label {
+    font-size: 1.7rem;
+    color: #ccc;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #5e5e5e;
+    background-color: #333;
+    color: #ffffff;
+
+}
+
+button {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e50914d8;
+}
+
+
+
+.forgot-password a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.forgot-password a:hover {
+   
+    font-weight: bold;
+}
+
+.criar-conta{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.criar-conta a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.criar-conta a:hover {
+    font-weight: bold;
+}   
+
+footer {
+    background-color: #14141477;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color:#ccc;
+}
