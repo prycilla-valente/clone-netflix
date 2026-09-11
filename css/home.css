@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: #141414;
+    color: #ffffff;
+
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #050505;
+    padding: 0 5rem;
+    height: 80px;
+    
+
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.logo img {
+    height: 120px;
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.menu-navegacao ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+}
+
+.menu-navegacao a:hover {
+    transition: color 0.3s ease;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.856);
+    border-radius: 30px;
+
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-right img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header-right img:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+/*Hero*/
+
+.hero {
+    background-image: url("../assets/img/a-odisseia.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 5rem;
+     
+}
+
+.informacoes-filme {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+
+.titulo-filme {
+    font-size: 4rem;
+    text-align: left;
+    
+}
+
+.descricao {
+    font-size: 1.8rem;
+    color: #cccccc;
+    line-height: 1.6;
+    text-align: justify;
+
+}
+.detalhes-filme {
+    display: flex;
+    align-items: center;    
+    flex-direction: row;
+    gap: 2.5rem;
+    font-weight: bold;
+    
+}
+ .detalhes-filme .classificacao {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+ }
+
+ /* Botões */
+
+ .botoes .btn-1, 
+ .botoes .btn-2 {
+    display: inline-block; /* serve para que os botões fiquem lado a lado */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+
+ }
+
+ .botoes .btn-1 {
+    background-color: #ffffff;
+    color: #000000;
+ }
+
+ 
+.botoes .btn-2 {
+    background-color: #272727;
+    color: #ffffff;
+}
+
+.botoes .btn-1:hover {
+    background-color: #413f3f93;
+    color: #ffffff;
+}
+
+.botoes .btn-2:hover {
+    background-color: #e2dfdf93;
+    color: #131313;
+}
+
+/* Categorias */
+.categorias {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+   
+  
+}
+
+.categorias ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    list-style: none;
+  
+}
+
+.categorias h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.categorias h3 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.card-filme {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* impede que os cards encolham */
+}
+
+.card-filme img {
+    border-radius: 5px;
+    width: 20rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.em-alta .card-filme img {
+    width: 15rem;
+    height: 22rem;
+    object-fit: cover;
+    
+
+}
+
+.card-filme:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}    
+
+/* Footer */
+footer {
+    background-color: rgb(17, 17, 17);
+    font-size: 1.2rem;
+    color:#ccc;
+    padding: 2rem 4%;
+    
+}
+
+.redes-sociais ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.redes-sociais img {
+    width: 36px;
+    height: 29px;
+    
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.links-uteis ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 1rem 0 14px;
+    padding: 0;
+    list-style: none;
+    gap: 2rem;
+}
+
+.links-uteis li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.links-uteis li a:hover {
+    text-decoration: underline;
+}
+
+.direitos-autorais {
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 1rem;
+}
