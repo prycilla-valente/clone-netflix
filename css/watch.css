@@ -90,7 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: 5rem;
+    padding: 5rem 5rem 7rem;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
@@ -121,7 +121,8 @@ body {
 
     display: flex;
     flex-direction: column;
-    padding: 5rem;
+    padding: 5rem 5rem 7rem;
+    gap: 2rem;
    
   
 }
@@ -133,6 +134,22 @@ body {
     flex-wrap: nowrap;
     gap: 2rem;
     list-style: none;
+    overflow-x: auto; /* permite a rolagem horizontal */
+    overflow-y: hidden; /* esconde a rolagem vertical */
+    padding-bottom: 1rem; /* espaço para a rolagem horizontal */
+}
+
+.mais-conteudos ul::-webkit-scrollbar {
+    height: 6px; /* altura da barra de rolagem */
+}
+
+.mais-conteudos ul::-webkit-scrollbar-track {
+    background: transparent; /* cor de fundo da trilha da barra de rolagem */
+}
+
+.mais-conteudos ul::-webkit-scrollbar-thumb {
+    background: #555; /* cor do polegar da barra de rolagem */
+    border-radius: 10px; /* borda arredondada do polegar da barra de rolagem */
 }
 
 .mais-conteudos h2 {
@@ -161,7 +178,7 @@ body {
 }
 
 .card-filme:hover {
-    transform: scale(1.04);
+    transform: scale(0.8);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }  
 

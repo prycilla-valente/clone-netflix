@@ -86,11 +86,11 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding: 5rem;
+    padding: 6rem 5rem;
      
 }
 
@@ -173,7 +173,10 @@ body {
 .categorias {
     display: flex;
     flex-direction: column;
-    padding: 5rem;
+    padding: 5rem 5rem 7rem;
+    gap: 2rem;
+    
+    
    
   
 }
@@ -184,12 +187,30 @@ body {
     flex-wrap: nowrap;
     gap: 2rem;
     list-style: none;
+    overflow-x: auto; /* permite a rolagem horizontal */
+    overflow-y: hidden; /* esconde a rolagem vertical */
+    padding-bottom: 1rem; /* espaço para a rolagem horizontal */
+
   
+}
+
+.categorias ul::-webkit-scrollbar {
+    height: 6px; /* altura da barra de rolagem */
+}
+
+.categorias ul::-webkit-scrollbar-track {
+    background: transparent; /* cor de fundo da trilha da barra de rolagem */
+}
+
+.categorias ul::-webkit-scrollbar-thumb {
+    background: #555; /* cor do polegar da barra de rolagem */
+    border-radius: 10px; /* borda arredondada do polegar da barra de rolagem */
 }
 
 .categorias h2 {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 0;
+    
 }
 
 .categorias h3 {
@@ -198,12 +219,16 @@ body {
 }
 
 .card-filme {
+
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
-    flex-shrink: 0; /* impede que os cards encolham */
+    flex-shrink: 0; /* impede que os cards encolham */  
+       
+    
+
 }
 
 .card-filme img {
@@ -222,7 +247,7 @@ body {
 }
 
 .card-filme:hover {
-    transform: scale(1.04);
+    transform: scale(0.8);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }    
 
