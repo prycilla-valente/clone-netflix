@@ -40,7 +40,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     gap: 30px;
 }
 
@@ -169,6 +169,55 @@ footer {
 
     .login-container h1 {
         font-size: 3rem;
+    }
+
+}
+
+/* Responsividade - Celular */
+@media (max-width: 480px) {
+
+    .header {
+        padding: 0 1.5rem;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .login-section {
+        padding: 0 1.5rem;
+        gap: 2rem;
+    }
+
+    .login-container {
+        max-width: 100%;
+        padding: 2.5rem 2rem;
+        border-radius: 8px;
+        gap: 1.5rem;
+
+    }
+
+    .login-container h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .input-group input {
+        font-size: 1.4rem;
+        padding: 0.8rem;
+    }
+
+    .input-group label {
+        font-size: 1.4rem;
+    }
+
+    button {
+        width: 100%;
+    }  
+
+    footer {
+        padding: 1.5rem;
+        font-size: 1rem;
     }
 
 }
