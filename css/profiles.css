@@ -111,3 +111,36 @@ a:hover {
     color: #e0dede;
 
 }
+
+/* Responsividade - Tablet */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 0 2rem;
+    }
+
+    .logo img {
+        height: 90px;
+    }
+
+    .profile-container {
+        gap: 1.5rem;
+        padding: 0 2rem;
+
+    }
+
+    .profile-card {
+        padding: 1.5rem;
+    }
+
+    .profile h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .foto-perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+}
