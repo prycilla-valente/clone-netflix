@@ -224,3 +224,72 @@ form button:hover {
     }
 
 }
+
+/* Responsividade - celular*/
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0 1.5rem;
+    
+    }
+
+    .logo img {
+        height: 70px;
+        
+    }
+
+    .menu-navegacao ul {
+        gap: 0.3rem;
+    }
+
+    .menu-navegacao ul li a {
+        font-size: 1.4rem;
+        padding: 0.6rem;
+    }
+
+    .login a {
+        padding: 0.6rem 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    .banner {
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+
+    .banner h1 {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    .banner p {
+        font-size: 1.6rem;
+        max-width: 100%;
+    }
+    
+    form {
+        width: 100%;
+        flex-direction: column;
+       
+
+    }
+
+    form input[type="email"] {
+        width: 100%;
+        max-width: 350px;
+       
+    }
+
+    form button {
+        width:100%;
+        max-width: 350px;
+    }
+
+    .botoes {
+        display: flex;
+        align-items: center;
+    }
+
+   
+
+}
