@@ -30,15 +30,14 @@ body {
 
 }
 
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
+.logo {
+    flex-shrink: 0;
 }
 
 .logo img {
     height: 120px;
 }
+
 
 .menu-navegacao ul {
     list-style: none;
@@ -226,8 +225,7 @@ body {
     text-align: center;
     transition: transform 0.3s ease;
     flex-shrink: 0; /* impede que os cards encolham */  
-       
-    
+           
 
 }
 
@@ -243,7 +241,6 @@ body {
     height: 22rem;
     object-fit: cover;
     
-
 }
 
 .card-filme:hover {
@@ -305,4 +302,83 @@ footer {
     color: #ccc;
     text-align: center;
     margin-top: 1rem;
+}
+
+/* Resposinvidade - tablet */
+
+@media (max-width: 768px) { 
+.header {
+    padding: 0 1.5rem;
+    height: 70px;
+}
+
+.logo img {
+    height: 65px;
+}
+
+.menu-navegacao ul {
+    gap: 0;
+    padding: 0;
+}
+
+.menu-navegacao ul li a {
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    
+}
+
+
+.header-right {
+    flex-shrink: 0;
+}
+
+.header-right img {
+    height: 38px;
+    width: 38px;
+}
+
+.hero {
+    height: 65vh;
+    min-height: 550px;
+    padding: 4rem 3rem;
+}
+
+.informacoes-filme {
+    width: 65%;
+    gap: 2rem;
+}
+
+.titulo-filme {
+    font-size: 3.5rem;
+}
+
+.descricao {
+    font-size: 1.6rem;
+}
+
+.categorias {
+    padding: 4rem 3rem 6rem;
+    gap: 2rem;
+}
+
+.categorias ul {
+    gap: 1.5rem;
+}
+
+.card-filme img {
+    width: 18rem;
+    height: 9rem;
+}
+
+.em-alta .card-filme img {
+    width: 13rem;
+    height: 19rem;
+    object-fit: cover;
+}
+
+.links-uteis ul {
+    gap: 1.5rem;
+
+}
+
 }
