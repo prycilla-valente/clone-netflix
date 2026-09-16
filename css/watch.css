@@ -26,7 +26,7 @@ body {
     background-color: #050505;
     padding: 0 5rem;
     height: 80px;
-    
+
 
 }
 
@@ -78,13 +78,14 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .player iframe {
     width: 100%;
     max-width: 1200px;
-    aspect-ratio: 16 / 9; /* mantém a proporção 16:9 */
+    aspect-ratio: 16 / 9;
+    /* mantém a proporção 16:9 */
     border: none;
 }
 
@@ -102,18 +103,18 @@ body {
 .informacoes-filme h2 {
     font-size: 4rem;
     text-align: left;
-    
+
 }
 
 .descricao {
     font-size: 1.6rem;
     line-height: 1.6;
     text-align: justify;
-} 
+}
 
 .dados-filme {
     display: flex;
-    align-items: center;    
+    align-items: center;
     flex-direction: row;
     gap: 2.5rem;
     font-weight: bold;
@@ -127,8 +128,8 @@ body {
     flex-direction: column;
     padding: 5rem 5rem 7rem;
     gap: 2rem;
-   
-  
+
+
 }
 
 .mais-conteudos ul {
@@ -138,22 +139,29 @@ body {
     flex-wrap: nowrap;
     gap: 2rem;
     list-style: none;
-    overflow-x: auto; /* permite a rolagem horizontal */
-    overflow-y: hidden; /* esconde a rolagem vertical */
-    padding-bottom: 1rem; /* espaço para a rolagem horizontal */
+    overflow-x: auto;
+    /* permite a rolagem horizontal */
+    overflow-y: hidden;
+    /* esconde a rolagem vertical */
+    padding-bottom: 1rem;
+    /* espaço para a rolagem horizontal */
 }
 
 .mais-conteudos ul::-webkit-scrollbar {
-    height: 6px; /* altura da barra de rolagem */
+    height: 6px;
+    /* altura da barra de rolagem */
 }
 
 .mais-conteudos ul::-webkit-scrollbar-track {
-    background: transparent; /* cor de fundo da trilha da barra de rolagem */
+    background: transparent;
+    /* cor de fundo da trilha da barra de rolagem */
 }
 
 .mais-conteudos ul::-webkit-scrollbar-thumb {
-    background: #555; /* cor do polegar da barra de rolagem */
-    border-radius: 10px; /* borda arredondada do polegar da barra de rolagem */
+    background: #555;
+    /* cor do polegar da barra de rolagem */
+    border-radius: 10px;
+    /* borda arredondada do polegar da barra de rolagem */
 }
 
 .mais-conteudos h2 {
@@ -165,13 +173,15 @@ body {
     font-size: 1.3rem;
     text-align: center;
 }
+
 .card-filme {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
-    flex-shrink: 0; /* impede que os cards encolham */
+    flex-shrink: 0;
+    /* impede que os cards encolham */
 }
 
 .card-filme img {
@@ -184,56 +194,18 @@ body {
 .card-filme:hover {
     transform: scale(0.8);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-}  
-
-/* Responsividade - tablet*/
-
-@media (max-width: 768px) {
-    .header {
-        padding: 0 3rem;
-    }
-
-    .logo img {
-        height: 90px;
-    }
-
-    .menu-navegacao ul {
-        gap: 2rem;
-    }
-
-    .menu-navegacao ul li a {
-        font-size: 1.5rem;
-        padding: 0.5rem 0;
-       
-    }
-
-    
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Footer */
 footer {
     background-color: rgb(17, 17, 17);
     font-size: 1.2rem;
-    color:#ccc;
+    color: #ccc;
     padding: 2rem 4%;
-    
+
 }
 
-.redes-sociais ul{
+.redes-sociais ul {
     list-style: none;
     display: flex;
     gap: 1rem;
@@ -242,7 +214,7 @@ footer {
 .redes-sociais img {
     width: 36px;
     height: 29px;
-    
+
 }
 
 .redes-sociais img:hover {
@@ -278,5 +250,93 @@ footer {
     color: #ccc;
     text-align: center;
     margin-top: 1rem;
+}
+
+
+/* Responsividade - tablet*/
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 3rem;
+    }
+
+    .logo img {
+        height: 90px;
+    }
+
+    .menu-navegacao ul {
+        gap: 2rem;
+    }
+
+    .menu-navegacao ul li a {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+
+    }
+}
+
+/* Responsividade - celular */
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0 1.5rem;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .menu-navegacao ul {
+        gap: 1rem;
+    }
+
+    .menu-navegacao ul li a {
+        font-size: 1.1rem;
+        padding: 0.3rem 0;
+    }
+
+    .header-right img {
+        width: 35px;
+        height: 35px;
+    }
+     .informacoes-filme {
+        padding: 3rem 2rem 5rem;
+        gap: 2rem;
+    }
+
+    .player iframe {
+        width: 100%;
+    }
+
+    .informacoes-filme h2 {
+        font-size: 2.8rem;
+    }
+
+    .descricao {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .dados-filme {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .mais-conteudos {
+        padding: 3rem 2rem 5rem;
+    }
+
+    .mais-conteudos h2 {
+        font-size: 1.8rem;
+    }
+
+    .card-filme {
+        padding: 1rem;
+    }
+
+    .card-filme img {
+        width: 18rem;
+        height: 10rem;
+    }
 }
 
