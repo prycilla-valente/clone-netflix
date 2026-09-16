@@ -359,3 +359,72 @@ footer {
     text-align: center;
     margin-top: 1rem;
 }
+
+/* Responsividade - tablet */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 0 1.5rem;
+        height: 70px;
+    }
+
+    .logo img {
+        height: 65px;
+    }
+
+    .menu-navegacao ul {
+        gap: 0;
+        padding: 0;
+    }
+
+    .menu-navegacao ul li a {
+        font-size: 1.3rem;
+        padding: 0.6rem;
+    }
+
+    .header-right {
+        flex-shrink: 0;
+    }
+
+    .header-right img {
+        height: 38px;
+        width: 38px;
+    }
+
+    .hero {
+        height: 65vh;
+        min-height: 55rem;
+        padding: 4rem 3rem;
+    }
+
+    .informacoes-filme {
+        width: 65%;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .titulo-filme {
+        font-size: 3.5rem;
+    }
+
+    .descricao {
+        font-size: 2rem;
+    }
+
+    .detalhes-filme {
+        padding: 4rem 2rem;
+    }
+    
+    .informacoes-conteudo {
+        gap: 2rem;
+    }
+
+    .informacoes-conteudo img {
+        max-width: 300px;
+        height: auto;
+        padding-top: 3rem;
+    }
+
+    
+}
