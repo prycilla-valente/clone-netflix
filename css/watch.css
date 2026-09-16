@@ -75,15 +75,19 @@ body {
 
 
 .player {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 
 .player iframe {
-    max-width: 100%;
-    height: 90vh;
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9; /* mantém a proporção 16:9 */
+    border: none;
 }
+
 
 .informacoes-filme {
     width: 100%;
@@ -182,6 +186,30 @@ body {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }  
 
+/* Responsividade - tablet*/
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 3rem;
+    }
+
+    .logo img {
+        height: 90px;
+    }
+
+    .menu-navegacao ul {
+        gap: 2rem;
+    }
+
+    .menu-navegacao ul li a {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+       
+    }
+
+    
+
+}
 
 
 
