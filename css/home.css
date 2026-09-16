@@ -26,7 +26,7 @@ body {
     background-color: #050505;
     padding: 0 5rem;
     height: 80px;
-    
+
 
 }
 
@@ -90,7 +90,7 @@ body {
     align-items: flex-end;
     justify-content: center;
     padding: 6rem 5rem;
-     
+
 }
 
 .informacoes-filme {
@@ -99,13 +99,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    
+
 }
 
 .titulo-filme {
     font-size: 4rem;
     text-align: left;
-    
+
 }
 
 .descricao {
@@ -115,26 +115,29 @@ body {
     text-align: justify;
 
 }
+
 .detalhes-filme {
     display: flex;
-    align-items: center;    
+    align-items: center;
     flex-direction: row;
     gap: 2.5rem;
     font-weight: bold;
-    
+
 }
- .detalhes-filme .classificacao {
+
+.detalhes-filme .classificacao {
     background-color: #e50914;
     color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
- }
+}
 
- /* Botões */
+/* Botões */
 
- .botoes .btn-1, 
- .botoes .btn-2 {
-    display: inline-block; /* serve para que os botões fiquem lado a lado */
+.botoes .btn-1,
+.botoes .btn-2 {
+    display: inline-block;
+    /* serve para que os botões fiquem lado a lado */
     border-radius: 5px;
     font-weight: bold;
     font-size: 1.6rem;
@@ -145,14 +148,14 @@ body {
     padding: 1rem 2rem;
     margin: 0.5rem;
 
- }
+}
 
- .botoes .btn-1 {
+.botoes .btn-1 {
     background-color: #ffffff;
     color: #000000;
- }
+}
 
- 
+
 .botoes .btn-2 {
     background-color: #272727;
     color: #ffffff;
@@ -174,10 +177,10 @@ body {
     flex-direction: column;
     padding: 5rem 5rem 7rem;
     gap: 2rem;
-    
-    
-   
-  
+
+
+
+
 }
 
 .categorias ul {
@@ -186,30 +189,37 @@ body {
     flex-wrap: nowrap;
     gap: 2rem;
     list-style: none;
-    overflow-x: auto; /* permite a rolagem horizontal */
-    overflow-y: hidden; /* esconde a rolagem vertical */
-    padding-bottom: 1rem; /* espaço para a rolagem horizontal */
+    overflow-x: auto;
+    /* permite a rolagem horizontal */
+    overflow-y: hidden;
+    /* esconde a rolagem vertical */
+    padding-bottom: 1rem;
+    /* espaço para a rolagem horizontal */
 
-  
+
 }
 
 .categorias ul::-webkit-scrollbar {
-    height: 6px; /* altura da barra de rolagem */
+    height: 6px;
+    /* altura da barra de rolagem */
 }
 
 .categorias ul::-webkit-scrollbar-track {
-    background: transparent; /* cor de fundo da trilha da barra de rolagem */
+    background: transparent;
+    /* cor de fundo da trilha da barra de rolagem */
 }
 
 .categorias ul::-webkit-scrollbar-thumb {
-    background: #555; /* cor do polegar da barra de rolagem */
-    border-radius: 10px; /* borda arredondada do polegar da barra de rolagem */
+    background: #555;
+    /* cor do polegar da barra de rolagem */
+    border-radius: 10px;
+    /* borda arredondada do polegar da barra de rolagem */
 }
 
 .categorias h2 {
     font-size: 2rem;
     margin-top: 0;
-    
+
 }
 
 .categorias h3 {
@@ -224,8 +234,9 @@ body {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
-    flex-shrink: 0; /* impede que os cards encolham */  
-           
+    flex-shrink: 0;
+    /* impede que os cards encolham */
+
 
 }
 
@@ -240,24 +251,24 @@ body {
     width: 15rem;
     height: 22rem;
     object-fit: cover;
-    
+
 }
 
 .card-filme:hover {
     transform: scale(0.8);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-}    
+}
 
 /* Footer */
 footer {
     background-color: rgb(17, 17, 17);
     font-size: 1.2rem;
-    color:#ccc;
+    color: #ccc;
     padding: 2rem 4%;
-    
+
 }
 
-.redes-sociais ul{
+.redes-sociais ul {
     list-style: none;
     display: flex;
     gap: 1rem;
@@ -266,7 +277,7 @@ footer {
 .redes-sociais img {
     width: 36px;
     height: 29px;
-    
+
 }
 
 .redes-sociais img:hover {
@@ -304,81 +315,165 @@ footer {
     margin-top: 1rem;
 }
 
-/* Resposinvidade - tablet */
+/* Responsividade - tablet */
 
-@media (max-width: 768px) { 
-.header {
-    padding: 0 1.5rem;
-    height: 70px;
+@media (max-width: 768px) {
+    .header {
+        padding: 0 1.5rem;
+        height: 70px;
+    }
+
+    .logo img {
+        height: 65px;
+    }
+
+    .menu-navegacao ul {
+        gap: 0;
+        padding: 0;
+    }
+
+    .menu-navegacao ul li a {
+        font-size: 1.3rem;
+        padding: 0.6rem;
+
+    }
+
+
+    .header-right {
+        flex-shrink: 0;
+    }
+
+    .header-right img {
+        height: 38px;
+        width: 38px;
+    }
+
+    .hero {
+        height: 65vh;
+        min-height: 550px;
+        padding: 4rem 3rem;
+    }
+
+    .informacoes-filme {
+        width: 65%;
+        gap: 2rem;
+    }
+
+    .titulo-filme {
+        font-size: 3.5rem;
+    }
+
+    .descricao {
+        font-size: 1.6rem;
+    }
+
+    .categorias {
+        padding: 4rem 3rem 6rem;
+        gap: 2rem;
+    }
+
+    .categorias ul {
+        gap: 1.5rem;
+    }
+
+    .card-filme img {
+        width: 18rem;
+        height: 9rem;
+    }
+
+    .em-alta .card-filme img {
+        width: 13rem;
+        height: 19rem;
+        object-fit: cover;
+    }
+
+    .links-uteis ul {
+        gap: 1.5rem;
+
+    }
 }
 
-.logo img {
-    height: 65px;
-}
+/* Responsividade - celular */
 
-.menu-navegacao ul {
-    gap: 0;
-    padding: 0;
-}
+@media (max-width: 480px) {
 
-.menu-navegacao ul li a {
-    font-size: 1.3rem;
-    padding: 0.6rem;
-    
-}
+    .header {
+        padding: 0 1rem;
+        height: 60px;
+    }
 
+    .logo img {
+        height: 55px;
+    }
 
-.header-right {
-    flex-shrink: 0;
-}
+    .menu-navegacao ul {
+        gap: 0;
+        padding: 0;
+    }
 
-.header-right img {
-    height: 38px;
-    width: 38px;
-}
+    .menu-navegacao ul li a {
+        font-size: 1.2rem;
+        padding: 0.4rem;
+    }
 
-.hero {
-    height: 65vh;
-    min-height: 550px;
-    padding: 4rem 3rem;
-}
+    .header-right img {
+        height: 35px;
+        width: 35px;
+    }
 
-.informacoes-filme {
-    width: 65%;
-    gap: 2rem;
-}
+    .hero {
+        height: calc(100vh - 60px);
+        min-height: 550px;
+        padding: 3rem 1.5rem;
+        background-position: center;
+    }
 
-.titulo-filme {
-    font-size: 3.5rem;
-}
+    .informacoes-filme {
+        width: 80%;
+        gap: 1.5rem;
+    }
 
-.descricao {
-    font-size: 1.6rem;
-}
+    .titulo-filme {
+        font-size: 2.8rem;
+    }
 
-.categorias {
-    padding: 4rem 3rem 6rem;
-    gap: 2rem;
-}
+    .descricao {
+        font-size: 1.6rem;
 
-.categorias ul {
-    gap: 1.5rem;
-}
+    }
 
-.card-filme img {
-    width: 18rem;
-    height: 9rem;
-}
+    .detalhes-filme {
+        gap: 1.5rem;
+        font-size: 1.6rem;
+    }
 
-.em-alta .card-filme img {
-    width: 13rem;
-    height: 19rem;
-    object-fit: cover;
-}
+    .categorias {
+        padding: 3rem 1.5rem 5rem;
+        gap: 1.8rem;
+    }
 
-.links-uteis ul {
-    gap: 1.5rem;
+    .categorias ul {
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
 
-}
+    .card-filme {
+        padding: 1rem;
+    }
+
+    .card-filme img {
+        width: 16rem;
+        height: 8rem;
+    }
+
+    .em-alta .card-filme img {
+        width: 14rem;
+        height: 18rem;
+
+    }
+
+    .categorias h3 {
+        font-size: 1.2rem;
+    }
 
 }
