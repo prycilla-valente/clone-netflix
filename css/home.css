@@ -425,7 +425,10 @@ footer {
         height: calc(100vh - 60px);
         min-height: 550px;
         padding: 3rem 1.5rem;
+        background-image: url("../assets/img/a-odisseia-mobile2.jpg");
         background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .informacoes-filme {
@@ -439,6 +442,7 @@ footer {
 
     .descricao {
         font-size: 1.6rem;
+        
 
     }
 
