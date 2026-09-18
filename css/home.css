@@ -73,10 +73,93 @@ body {
     border-radius: 50%;
 }
 
-.header-right img:hover {
+.avatar span {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-image: url("../assets/img/foto-perfil/avatar-svgrepo-com.svg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.avatar span:hover {
     transition: transform 0.3s ease;
     transform: scale(1.1);
+}    
+
+.perfil-target {
+    display: none;
 }
+
+#gabriel:target ~ .header .avatar span {
+   background-image: url("../assets/img/foto-perfil/Gabriel.jpeg");
+}
+
+#judah:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/judah.JPEG");
+}
+
+#matheus:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/matheus.jpg");
+}
+
+#prycilla:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/prycilla.jpeg");
+}
+
+#rafael:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/Rafael.jpeg");
+}
+
+#ramon:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/ramon.jpg");
+}
+
+#tiago:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/tiago.jpg");
+}
+
+.btn-gabriel,
+.btn-judah,
+.btn-matheus,
+.btn-prycilla,
+.btn-rafael,
+.btn-ramon,
+.btn-tiago {
+    display: none;
+}
+
+body:has(#gabriel:target) .btn-gabriel {
+    display: inline-block;
+}
+
+body:has(#judah:target) .btn-judah {
+    display: inline-block;
+}
+
+body:has(#matheus:target) .btn-matheus {
+    display: inline-block;
+}
+
+body:has(#prycilla:target) .btn-prycilla {
+    display: inline-block;
+}
+
+body:has(#rafael:target) .btn-rafael {
+    display: inline-block;
+}
+
+body:has(#ramon:target) .btn-ramon {
+    display: inline-block;
+}
+
+body:has(#tiago:target) .btn-tiago {
+    display: inline-block;
+}
+
+
 
 /*Hero*/
 
@@ -134,10 +217,8 @@ body {
 
 /* Botões */
 
-.botoes .btn-1,
-.botoes .btn-2 {
-    display: inline-block;
-    /* serve para que os botões fiquem lado a lado */
+.botoes .btn-1, .botoes .btn-2{
+    
     border-radius: 5px;
     font-weight: bold;
     font-size: 1.6rem;
@@ -150,6 +231,7 @@ body {
 
 }
 
+ 
 .botoes .btn-1 {
     background-color: #ffffff;
     color: #000000;
@@ -255,7 +337,7 @@ body {
 }
 
 .card-filme:hover {
-    transform: scale(0.8);
+    transform: scale(1.1);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -343,7 +425,7 @@ footer {
         flex-shrink: 0;
     }
 
-    .header-right img {
+    .avatar span {
         height: 38px;
         width: 38px;
     }
@@ -416,14 +498,14 @@ footer {
         padding: 0.4rem;
     }
 
-    .header-right img {
+    .avatar span {
         height: 35px;
         width: 35px;
     }
 
     .hero {
         height: calc(100vh - 60px);
-        min-height: 550px;
+        min-height: 400px;
         padding: 3rem 1.5rem;
         background-image: url("../assets/img/a-odisseia-mobile2.jpg");
         background-position: center;
