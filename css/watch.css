@@ -63,14 +63,50 @@ body {
 
 }
 
-.header-right img {
-    height: 50px;
+.avatar span {
+    display: block;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
+    background-image: url("../assets/img/foto-perfil/avatar-svgrepo-com.svg");
+    background-size: cover;
+    background-position: center;
 }
-
-.header-right img:hover {
+.avatar span:hover {
     transition: transform 0.3s ease;
     transform: scale(1.1);
+}
+
+.perfil-target {
+    display: none;
+}
+
+#gabriel:target ~ .header .avatar span {
+   background-image: url("../assets/img/foto-perfil/Gabriel.jpeg");
+}
+
+#judah:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/judah.JPEG");
+}
+
+#matheus:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/matheus.jpg");
+}
+
+#prycilla:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/prycilla.jpeg");
+}
+
+#rafael:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/Rafael.jpeg");
+}
+
+#ramon:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/ramon.jpg");
+}
+
+#tiago:target ~ .header .avatar span {
+    background-image: url("../assets/img/foto-perfil/tiago.jpg");
 }
 
 
@@ -192,7 +228,7 @@ body {
 }
 
 .card-filme:hover {
-    transform: scale(0.8);
+    transform: scale(1.1);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -295,7 +331,7 @@ footer {
         padding: 0.3rem 0;
     }
 
-    .header-right img {
+    .avatar span {
         width: 35px;
         height: 35px;
     }
@@ -304,10 +340,7 @@ footer {
         gap: 2rem;
     }
 
-    .player iframe {
-        width: 100%;
-    }
-
+   
     .informacoes-filme h2 {
         font-size: 2.8rem;
     }
